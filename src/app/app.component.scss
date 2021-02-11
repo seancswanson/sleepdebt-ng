@@ -1,0 +1,50 @@
+header
+{
+    padding: 0 10px;
+
+    border-bottom: 1px dotted black;
+}
+
+.nav-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 100%;
+
+    .nav-links-container
+    {
+        display: flex;
+
+        a
+        {
+            padding: 10px;
+        }
+    }
+}
+
+footer
+{
+    border-top: 1px dotted black;
+}
+
+.footer-container
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+
+    height: 100%;
+
+    .social-links-container
+    {
+        display: flex;
+
+        a
+        {
+            padding: 10px;
+        }
+    }
+}
