@@ -1,1 +1,80 @@
 /* You can add global styles to this file, and also import other style files */
+// ********************
+// My own global styles
+// ********************
+
+
+@font-face
+{
+    font-family: 'poppins';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('assets/fonts/Poppins/Poppins-Medium.ttf') format('truetype');
+}
+
+
+@font-face
+{
+    font-family: 'favorit';
+    font-weight: 300;
+    font-style: normal;
+
+    src: url('assets/fonts/Favorit/ABCFavoritExpanded-Light-Trial.otf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'favorit';
+    font-weight: 400;
+    font-style: normal;
+
+    src: url('assets/fonts/Favorit/ABCFavoritExpanded-Book-Trial.otf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'favorit';
+    font-weight: 500;
+    font-style: normal;
+
+    src: url('assets/fonts/Favorit/ABCFavoritExpanded-Regular-Trial.otf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'favorit';
+    font-weight: 600;
+    font-style: normal;
+
+    src: url('assets/fonts/Favorit/ABCFavoritExpanded-Medium-Trial.otf') format('truetype');
+}
+
+
+@font-face
+{
+    font-family: 'favorit';
+    font-weight: 700;
+    font-style: normal;
+
+    src: url('assets/fonts/Favorit/ABCFavoritExpanded-Bold-Trial.otf') format('truetype');
+}
+
+
+body
+{
+    font-family: 'poppins';
+
+    width: 100vw;
+    min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5
+{
+    font-family: 'favorit';
+    font-weight: 400;
+}
