@@ -24,6 +24,21 @@ header
     }
 }
 
+main
+{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+
+    .page-title
+    {
+        display: flex;
+        flex: 1;
+
+        border-bottom: 1px dotted black;
+    }
+}
+
 footer
 {
     border-top: 1px dotted black;
