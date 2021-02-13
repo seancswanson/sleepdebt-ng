@@ -8,13 +8,45 @@
 </header>
 <main>
   <h1 class="page-title">Sleep Debt Calculator</h1>
-  <h2>"Sleep debt or sleep deficit is the cumulative effect of not getting enough sleep. A large sleep debt may lead to mental or physical fatigue."</h2>
-  <div class="info-wrapper"><div class="info-icon"></div>What are the effects of sleep deprivation? Read more here.</div>
-  <h3>The recommended amount of sleep will change depending on your age. Use the calculator below to determine if you have any sleep debt from last night.</h3>
+  <h2>
+    "Sleep debt or sleep deficit is the cumulative effect of not getting enough
+    sleep. A large sleep debt may lead to mental or physical fatigue."
+  </h2>
+  <div class="info-bar-container">
+    <div
+      class="top"
+      [ngClass]="{ expanded: infoBarToggled }"
+      (click)="toggleInfoBar()"
+      tabindex="0"
+    >
+      <div class="info-icon"></div>
+      What are the symptoms of sleep deprivation? Read more here.
+    </div>
+    <div class="bottom" [ngClass]="{ expanded: infoBarToggled }">
+      <div class="info-bar-content">
+        "Not getting enough sleep can affect your mood, memory and health in
+        far-reaching and surprising ways, says Johns Hopkins sleep researcher
+        Patrick Finan, Ph.D. Learn more about the effects of sleep deprivation.
+        <a
+          href="https://www.hopkinsmedicine.org/-/media/files/health/infographic_sleepdeprivation.ashx?la=en&hash=BFEC7405D1A13CA192186C797152F475D917A116"
+          >Download the infographic as a PDF."
+        </a>
+        <span class="info-credit"
+          >“The Effects of Sleep Deprivation.” Johns Hopkins Medicine,
+          www.hopkinsmedicine.org/health/wellness-and-prevention/the-effects-of-sleep-deprivation.
+        </span>
+      </div>
+    </div>
+  </div>
+  <h3>
+    The recommended amount of sleep will change depending on your age. Use the
+    calculator below to determine if you have any sleep debt from last night.
+  </h3>
   <app-sleep-debt-calc></app-sleep-debt-calc>
-
 </main>
 <footer>
+  <div class="background-illustration"></div>
+
   <div class="footer-container">
     <div class="logo">sleepdebt</div>
     <div class="credit-wrapper">
